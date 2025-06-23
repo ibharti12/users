@@ -1,0 +1,42 @@
+{
+  "name": "venivibe",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/client-ses": "^3.609.0",
+    "@aws-sdk/lib-storage": "^3.693.0",
+    "@paystack/inline-js": "^2.22.1",
+    "axios": "^1.10.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "mysql2": "^3.14.1",
+    "nanoid": "^5.1.5",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.1",
+    "paystack-node": "^0.3.0",
+    "pg": "^8.12.0",
+    "pino": "^9.2.0",
+    "pino-pretty": "^11.2.1",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "socket.io": "^4.7.5",
+    "url": "^0.11.4"
+  },
+  "author": "Ramtirth Mallick"
+}
