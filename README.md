@@ -30,3 +30,15 @@ npx sequelize-cli db:migrate
 npm start
 
 
+| Method | Endpoint                 | Description                         | Middleware                                |
+| ------ | ------------------------ | ----------------------------------- | ----------------------------------------- |
+| POST   | `/users/login`           | User login                          | `fieldValidator`                          |
+| POST   | `/users/register`        | User registration with image upload | `upload.single("file")`, `fieldValidator` |
+| GET    | `/users/verify/:token`   | Email verification                  | None                                      |
+| POST   | `/users/google-login`    | Google login                        | None                                      |
+| GET    | `/users/`                | Get current user details            | `auth`                                    |
+| GET    | `/users/get-user`        | Get all users (admin)               | `auth`                                    |
+| POST   | `/users/forgot-password` | Forgot password email               | `fieldValidator`                          |
+| POST   | `/users/update-password` | Reset password using token          | `auth`, `fieldValidator`                  |
+| POST   | `/users/change-password` | Authenticated user password change  | `auth`, `fieldValidator`                  |
+
